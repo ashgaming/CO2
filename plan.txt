@@ -1,0 +1,19 @@
+admin login
+cust login
+emp login
+cust signup
+emp signup
+
+emp side pages: 
+    current order 
+    order history
+    Stocks 
+    update stocks 
+    inventry
+    update inventry
+
+home page
+    menu card
+    make order
+    payment
+    feedback
