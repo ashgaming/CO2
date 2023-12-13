@@ -91,7 +91,6 @@ function App() {
           <Route path="/check" element={<Check/>} />
         </Routes>
         <Footer />
-        <checkValid/>
       </Router>
 
     </>
@@ -99,4 +98,3 @@ function App() {
 }
 
 export default App;
-//<AddProduct/>/
