@@ -24,12 +24,23 @@ export default function Stocks() {
         } getAllProduct()
     }, [])
 
+    const delProduct = (id) =>{
+        // code to delete product
+    }
+
+    const refProduct = (id)=>{
+
+    }
+
+    const editProduct = (id)=>{
+
+    }
     return (
         <div>
 
 
             <center>
-                <form data-aos="fade-up-right">
+                <form >
                     <br />
                     <h1 id="dat">Date</h1>
                     <br />
@@ -62,9 +73,9 @@ export default function Stocks() {
                                         <td><center>{( product.sold / product.cap) * 100}</center></td>
                                         <td>
 
-                                            <a href="/CO2/php/refealProduct.php?id='.$product.'"> <button type="button" name="btn" value="Refeal" Style="margin: 1px;" className="btn btn-primary btn" >Refeal</button></a>
-                                            <a href="/CO2/php/EditProduct.php?id='.$product.'"> <button type="button" name="btn" value="Edit" Style="margin: 1px;" className="btn btn-primary btn" >Edit</button></a>
-                                            <a href="/CO2/php/deleteProduct.php?id='.$id.'"> <button type="button" name="btn" value="delete" Style="margin: 1px;" className="btn btn-primary btn" >Delete</button></a>
+                                             <button type="button" name="btn" Style="margin: 1px;" className="btn btn-primary btn" onClick={editProduct(product.id)}>Edit</button>
+                                             <button type="button" name="btn" Style="margin: 1px;" className="btn btn-primary btn" onClick={refProduct(product.id)}>Refeal</button>
+                                             <button type="button" name="btn" Style="margin: 1px;" className="btn btn-primary btn" onClick={delProduct(product.id)}>Delete</button>
 
                                         </td>
                                     </tr>

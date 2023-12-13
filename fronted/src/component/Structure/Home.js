@@ -88,17 +88,8 @@ export default function Home() {
       <div>
 
       </div>
-      <div className='btn_container' >
-        <button className='home_btn'>Product</button>
-        <button className='home_btn'> Sales</button>
-        <button className='home_btn'>Order</button>
-        <button className='home_btn' onClick={loadScreen}>Stocks</button>
-      </div>
     
     </>
   )
-}
-function loadScreen() {
-  return alert(<Discount />);
 }
 

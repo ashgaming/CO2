@@ -60,42 +60,25 @@ export default function AddProduct() {
    
          }*/
         const j = JSON.stringify(formfield)
-         axios.post("http://127.0.0.1:8000/backend/Product/", formfield, {
+        axios.post("http://127.0.0.1:8000/backend/Product/", formfield, {
             headers: {
                 'Content-Type': 'application/json',
             },
-        }).then(
+        }).then(()=>{
             console.log("Data Enter Suceesfully")
-        ).catch(err => console.log(err));
+            alert("Product Added Sucessfully")
+            clearInput()
+        }).catch(err => console.log(err));
 
-         
-      /*   await axios.post({
-           method:'post',
-           url:"http://127.0.0.1:8000/backend/Product/",
-           Data:JSON.stringify(formfield),           
-           headers: {
-            'Content-Type': 'application/json',
-        },
-         }).then((response)=>{
-
-           console.log('This is response.data')
-           console.log(response.data)
-           // history.push('/');
-        })
-        .catch(err => console.log(err))
-         
-        /* var type = document.getElementById("ptype");
-         var name = document.getElementById("pname");
-         var cap = document.getElementById("capacity");
-         var price = document.getElementById("Price");
-          
-          console.log(type.value);
-          console.log(name.value);
-          console.log(cap.value);
-          console.log(price.value);
-      */
     }
-
+    const clearInput=()=>
+    {
+        setType('');
+        setPname('');
+        setPrice('');
+        setCapacity('');
+        setDescription('');
+    }
 
     return (
         <>

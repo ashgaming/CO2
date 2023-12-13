@@ -31,9 +31,9 @@ const AddFeedback = (selectedrating) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-        }).then((response) => {
+        }).then(() => {
             alert("We get your feedback sussessfully..!");
-            //   navigate('/');
+            // navigate('/');
         });
     }
     catch (err) {

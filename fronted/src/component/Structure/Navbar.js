@@ -14,15 +14,17 @@ export default function Navbar(props) {
             <li className="nav-item">
              <Link className="nav-link active" aria-current="page" to="/" path="" Style="color:white">Home</Link>
             </li>
-            <li className="nav-item">
-             <Link className="nav-link" to="/MenuCard" path="" Style="color:white">MenuCard</Link>
-            </li>
+           {
+/**
+<li className="nav-item">
+<Link className="nav-link" to="/MenuCard" path="" Style="color:white">MenuCard</Link>
+</li>
+*/
+}
             <li className="nav-item">
               <Link className="nav-link" to="/AddSales" Style="color:white">Sales</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/AddProduct" Style="color:white">Product</Link>
-            </li>
+            
             <li className="nav-item">
               <Link className="nav-link" to="/Stocks" Style="color:white">Stock</Link>
             </li>
