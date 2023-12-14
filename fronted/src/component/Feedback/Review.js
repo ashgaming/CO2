@@ -51,13 +51,16 @@ const Review = () => {
         <>
       <div className='Review_container'>
         <li key={item.id}><b>Id:</b> {item.id}</li>
-         <li key={item.id}><b>User Id:</b>{item.uid}</li>
          <li key={item.id}><b>User Name:</b>{item.name} {item.surname}</li>
          <li key={item.id}><b>  
                            Rating: <StarRating rating={item.rating} />
                        </b>
           </li>
-         <li key={item.id}><b>Comment:</b>{item.review}</li>
+         <li key={item.id}><b>Comment:</b>
+          <div className='Comment'>
+          {item.review}
+          </div>
+         </li>
          </div>
         </>
       ))}

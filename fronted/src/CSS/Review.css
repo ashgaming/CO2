@@ -30,3 +30,9 @@
   /*  display: flex;*/
     margin: 2px;
 }
+
+.Comment{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
