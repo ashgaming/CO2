@@ -64,6 +64,8 @@ def get_feedback(request, id):
             'surname': element.surname,
             'review': element.review,
             'is_Valid': element.is_valid,
+            'date':element.date,
+            'time':element.time,
         }
         return JsonResponse(data)
     except Exception as e:
